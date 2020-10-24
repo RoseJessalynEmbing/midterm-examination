@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: Century Gothic;
+}
+a {
+    text-decoration: none;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+   
+}
+
+/* Hero Section */
+#hero{
+    background-image: url(landing-page.jpg);
+    background-size: cover;
+    background-position: center;
+    position: center;
+    text-align: center;
+    z-index: 1;
+}
+#hero::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .10;
+    z-index: -1;
+}
+#hero h1{
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    padding: 100px 0;
+    margin-bottom: 15px;
+    font-family: NoirPro, sans-serif                                                                                                      ;
+    color: #FFF;  
+ 
+}
+#hero p{
+    display: block;
+    width: fit-content;
+    font-size: 2rem;
+    font-family: Noir, sans-serif;
+    font-weight: bold;
+    position: center;
+    margin-top: 15px;
+    letter-spacing: .2rem;
+    color: #FFF; 
+}
+#hero .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: #FFF;
+    background-color: #015668;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    position: center;
+    margin-top: 50px;
+    transition: .3s ease background-color;    
+}
+#hero .cta:hover{                                                                                                                                                                                                                  
+    color: white;
+    background-color: #015668;
+}
+/* End Hero Section */
+
+
+/* Location Section */
+#location .location{
+text-align: justify;
+margin: none;
+padding: 100px;
+background-image: url(new-york-page.png);
+background-size: cover;
+background-position: center;
+position: center;
+z-index: 1;
+}
+#location .location::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .10;
+    z-index: -1;
+}
+#location .location-item h2{
+    display: block;
+    width: fit-content;
+    font-family: NoirPro, sans-serif;
+    font-size: 5rem;
+    text-align: left;
+    color: #FFD369;  
+}
+#location .location-item p{
+    margin-top: 10px;
+font-family: NoirPro, sans-serif;
+font-size: 3.5rem;
+color: wheat;
+}
+/* End Location Section */
+
+
+
+/* Benefits Section */
+#benefits .benefits{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    background-color: #015668;
+    padding: 100px 0;
+}
+#benefits .section-title{
+    font-family: NoirPro, sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+#benefits .benefits-top p{
+    font-family: NoirPro, sans-serif;
+    font-size: 2rem;
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+}
+#benefits .benefits-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#benefits .benefits-item{
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: white;
+    background-size: cover;
+    margin: 10px 5%;
+}
+#benefits .benefits-item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#benefits .benefits-bottom .icon{
+    height: 50px;
+    width: 50px;
+    margin-bottom: 20px;
+}
+#benefits .benefits-bottom .icon img{
+    height: 100%;
+    width: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+#benefits .benefits h2{
+    font-family: NoirPro, sans-serif;
+    font-weight: bold;
+}
+/* Emd Benefits Section */
